@@ -1,9 +1,37 @@
-    /* .grid-container{
-        display: grid;
-        grid-template-areas: 'imagen descripcion',
-                            'imagen2 descripcion2 imagen3';
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+*{
+    font-family: 'League Spartan', sans-serif;
+}
+
+@media (min-width: 640px) {
+    
+    .ulPersonalizado li{
+        position: relative;
+        cursor: pointer;
+        
+    }
+    
+    .ulPersonalizado li::after{
+        transition: .5s ease-in-out;
+        content: '';
+        width: 80%;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        margin: auto;
+    }
+    .ulPersonalizado li:hover::after{
+        content: '';
+        width: 80%;
+        height: 3px;
+        background-color: aliceblue ;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
     }
 
-    .grid-item{
-        grid-area:imagen;
-    } */
+
+
+}
