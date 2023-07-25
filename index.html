@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
-    <title>Room-homePage</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
 
-  <body>
-    <div>
-      <section>
-        <figure >
-          <img class="hidden sm:block" src="./assets/images/desktop-image-hero-1.jpg" alt="" />
-          <img class="w-full sm:hidden" src="./assets/images/mobile-image-hero-1.jpg" alt="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon" />
+  <title>Room-homePage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+  <div class="lg:flex lg:flex-wrap">
+    <section class="lg:w-7/12 lg:relative lg:z-30 lg:overflow-visible">
+      <div class="relative z-10 lg:overflow-visible">
+        <figure>
+          <img class="hidden sm:block md:w-full" src="./assets/images/desktop-image-hero-1.jpg" alt="" />
+          <img class="w-full sm:hidden" src="./assets/images/mobile-image-hero-1.jpg" alt="" />
         </figure>
 
         <figure class="hidden">
-          <img class="hidden sm:block" src="./assets/images/desktop-image-hero-2.jpg" alt="" />
-          <img class="w-full sm:hidden" src="./assets/images/mobile-image-hero-2.jpg" alt="">
+          <img class="hidden sm:block md:w-full" src="./assets/images/desktop-image-hero-2.jpg" alt="" />
+          <img class="w-full sm:hidden" src="./assets/images/mobile-image-hero-2.jpg" alt="" />
         </figure>
 
         <figure class="hidden">
-          <img class="hidden sm:block"src="./assets/images/desktop-image-hero-3.jpg" alt="" />
-          <img class="w-full sm:hidden" src="./assets/images/mobile-image-hero-3.jpg" alt="">
+          <img class="hidden sm:block" src="./assets/images/desktop-image-hero-3.jpg" alt="" />
+          <img class="w-full sm:hidden" src="./assets/images/mobile-image-hero-3.jpg" alt="" />
         </figure>
 
         <div>
@@ -33,136 +35,132 @@
           </figure>
 
           <figure class="absolute top-10 left-10 cursor-pointer sm:hidden">
-            <img src="./assets/images/icon-hamburger.svg" alt="icon-hamburger">
+            <img src="./assets/images/icon-hamburger.svg" alt="icon-hamburger" />
           </figure>
 
-          <ul class="ulPersonalizado absolute top-0 flex justify-end gap-6 bg-white w-full py-8 px-8 font-bold text-xs lowercase hidden
-                      sm:flex sm:bg-transparent sm:justify-start ml-32 sm:text-base sm:text-white sm:pb-2">
-
+          <ul
+            class="ulPersonalizado absolute top-0 flex justify-end gap-6 bg-white w-full py-8 px-8 font-bold text-xs lowercase hidden sm:flex sm:bg-transparent sm:justify-start ml-32 sm:text-base sm:text-white sm:pb-2">
             <li class="mr-6 sm:hidden">
-                <img src="./assets/images/icon-close.svg" alt="">
+              <img src="./assets/images/icon-close.svg" alt="" />
             </li>
 
-            <li >
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Home</a
-              >
+            <li>
+              <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
             </li>
             <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Shop</a
-              >
+              <a href="http://" target="_blank" rel="noopener noreferrer">Shop</a>
             </li>
             <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >About</a
-              >
+              <a href="http://" target="_blank" rel="noopener noreferrer">About</a>
             </li>
             <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Contact</a
-              >
+              <a href="http://" target="_blank" rel="noopener noreferrer">Contact</a>
             </li>
           </ul>
+        </div>
 
-          <div class=" bg-black  absolute right-0  flex">
-            <figure class="p-4">
-              <a href="http://">
-                <img
-                  src="./assets/images/icon-angle-left.svg"
-                  alt="icon-angle-left"
-                />
-              </a>
-            </figure>
+        <div class="bg-black relative w-max m-0 ml-auto -top-14 z-20 flex justify-center 
+                    lg:absolute lg:bottom-0 lg:top-auto lg:left-full">
+          <figure class="p-4 lg:p-6 lg:px-8 hover:bg-slate-500 hover:cursor-pointer">
+            <a href="http://">
+              <img src="./assets/images/icon-angle-left.svg" alt="icon-angle-left" />
+            </a>
+          </figure>
 
-            <figure class="p-4">
-              <a href="http://">
-                <img
-                  src="./assets/images/icon-angle-right.svg"
-                  alt="icon-angle-right"
-                />
-              </a>
-            </figure>
+          <figure class="p-4 lg:p-6 lg:px-8 hover:bg-slate-500 hover:cursor-pointer">
+            <a href="http://">
+              <img src="./assets/images/icon-angle-right.svg" alt="icon-angle-right" />
+            </a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="lg:w-2/5 lg:flex lg:justify-center lg:items-center lg:relative lg:z-10">
+      <div class="py-16 pt-0 px-8 sm:px-24 sm:py-24 sm:pt-8 lg:p-0 lg:flex lg:max-w-md">
+        <article>
+          <h2 class="text-4xl font-bold mb-4 tracking-tighter">
+            Discover innovative ways to decorate
+          </h2>
+          <p class="text-stone-400 pb-8 lg:pb-4">
+            We provide unmatched quality, comfort, and style for property
+            owners across the country. Our experts combine form and function
+            in bringing your vision to life. Create a room in your own style
+            with our collection and make your property a reflection of you and
+            what you love.
+          </p>
+          <div class="flex items-center gap-8 uppercase hover:opacity-50 cursor-pointer">
+            <div class="tracking-[10px]">Shop now</div>
+            <img class="w-10" src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
           </div>
+        </article>
+
+        <article class="hidden">
+          <h2 class="text-4xl font-bold mb-4 tracking-tighter">
+            We are available all across the globe
+          </h2>
+          <p class="text-stone-400 pb-8">
+            With stores all over the world, it's easy for you to find
+            furniture for your home or place of business. Locally, we’re in
+            most major cities throughout the country. Find the branch nearest
+            you using our store locator. Any questions? Don't hesitate to
+            contact us today.
+          </p>
+          <div class="flex items-center gap-8 uppercase hover:opacity-50 cursor-pointer">
+            <div class="tracking-[10px]">Shop now</div>
+            <img class="w-10" src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
+          </div>
+        </article>
+
+        <article class="hidden">
+          <h2 class="text-4xl font-bold mb-4 tracking-tighter">
+            Manufactured with the best materials
+          </h2>
+          <p class="text-stone-400 pb-8">
+            Our modern furniture store provide a high level of quality. Our
+            company has invested in advanced technology to ensure that every
+            product is made as perfect and as consistent as possible. With
+            three decades of experience in this industry, we understand what
+            customers want for their home and office.
+          </p>
+          <div class="flex items-center gap-8 uppercase hover:opacity-50 cursor-pointer">
+            <div class="tracking-[10px]">Shop now</div>
+            <img class="w-10" src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="lg:flex">
+      <section>
+        <figure class="lg:w-full lg:h-full lg:object-cover">
+          <img class="w-full lg:h-full object-cover" src="./assets/images/image-about-dark.jpg" alt="" />
+        </figure>
+      </section>
+
+      <section class="lg:flex lg:justify-center lg:items-center lg:max-xl p-10">
+        <div class="py-16 px-8 sm:px-24 sm:py-24 lg:max-w-lg lg:p-0">
+          <h3 class="text-lg font-bold mb-4 tracking-[4px] uppercase">
+            About our furniture
+          </h3>
+          <p class="text-stone-400">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available
+            to help you create your dream space.
+          </p>
         </div>
       </section>
 
       <section>
-        <div class="py-16 px-8">
-          <article>
-            <h2 class="text-4xl font-bold mb-4 tracking-tighter">Discover innovative ways to decorate</h2>
-            <p class="text-stone-400  pb-8">
-              We provide unmatched quality, comfort, and style for property
-              owners across the country. Our experts combine form and function
-              in bringing your vision to life. Create a room in your own style
-              with our collection and make your property a reflection of you and
-              what you love.
-            </p>
-            <div class="flex items-center gap-8 uppercase hover:opacity-50 cursor-pointer">
-              <div class="tracking-[10px]">Shop now</div>
-              <img class="w-10" src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
-            </div>
-          </article>
-
-          <article class="hidden">
-            <h2 class="text-4xl font-bold mb-4 tracking-tighter">We are available all across the globe</h2>
-             <p class="text-stone-400  pb-8">
-              With stores all over the world, it's easy for you to find
-              furniture for your home or place of business. Locally, we’re in
-              most major cities throughout the country. Find the branch nearest
-              you using our store locator. Any questions? Don't hesitate to
-              contact us today.
-            </p>
-           <div class="flex items-center gap-8 uppercase hover:opacity-50 cursor-pointer">
-              <div class="tracking-[10px]">Shop now</div>
-              <img class="w-10" src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
-            </div>
-          </article>
-
-          <article class="hidden">
-           <h2 class="text-4xl font-bold mb-4 tracking-tighter">Manufactured with the best materials</h2>
-             <p class="text-stone-400  pb-8">
-              Our modern furniture store provide a high level of quality. Our
-              company has invested in advanced technology to ensure that every
-              product is made as perfect and as consistent as possible. With
-              three decades of experience in this industry, we understand what
-              customers want for their home and office.
-            </p>
-            <div class="flex items-center gap-8 uppercase hover:opacity-50 cursor-pointer">
-              <div class="tracking-[10px]">Shop now</div>
-              <img class="w-10" src="./assets/images/icon-arrow.svg" alt="icon-arrow" />
-            </div>
-          </article>
-        </div>
+        <figure class="lg:w-full lg:h-full lg:object-cover">
+          <img class="w-full lg:h-full object-cover" src="./assets/images/image-about-light.jpg" alt="" />
+        </figure>
       </section>
-
-      <div>
-        <section>
-          <figure>
-            <img class="w-full" src="./assets/images/image-about-dark.jpg" alt="" />
-          </figure>
-        </section>
-
-        <section>
-          <div  class="py-16 px-8">
-            <h3 class="text-lg font-bold mb-4 tracking-[4px] uppercase">About our furniture</h3>
-            <p  class="text-stone-400">
-              Our multifunctional collection blends design and function to suit
-              your individual taste. Make each room unique, or pick a cohesive
-              theme that best express your interests and what inspires you. Find
-              the furniture pieces you need, from traditional to contemporary
-              styles or anything in between. Product specialists are available
-              to help you create your dream space.
-            </p>
-          </div>
-        </section>
-
-        <section>
-          <figure>
-            <img class="w-full" src="./assets/images/image-about-light.jpg" alt="" />
-          </figure>
-        </section>
-      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
