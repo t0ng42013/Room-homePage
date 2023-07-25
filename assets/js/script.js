@@ -5,7 +5,13 @@ const btnClose = document.getElementById('btnClose');
 const menuItem = document.getElementById('menuItem');
 const sectionImage = document.querySelectorAll('.img');
 const sectionDescription = document.querySelectorAll('article');
+const section = document.getElementById('section');
 let i =0;
+let newDiv;
+
+
+const originalBodyOverflow = document.body.style.overflow;
+const originalHtmlOverflow = document.documentElement.style.overflow;
 
 
 bntLeft.addEventListener("click", () => {
@@ -45,11 +51,32 @@ btnRight.addEventListener("click", () => {
 btnMenu.addEventListener("click", () => {
   
     menuItem.classList.toggle("hidden")
+
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+
+   newDiv = document.createElement("div");
+   newDiv.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+   newDiv.style.overflow = "hidden";
+   newDiv.style.width = "100vw";
+   newDiv.style.height = "100% ";
+   newDiv.style.position = "fixed";
+   newDiv.style.left = "0px";
+   newDiv.style.top = "80px";
+   newDiv.style.zIndex = "999";
+
+
+
+    // Agregar el nuevo div dentro del section
+    section.appendChild(newDiv);
 });
 
 btnClose.addEventListener("click", () => {
    
     
     menuItem.classList.add("hidden")
+      document.documentElement.style.overflow = originalHtmlOverflow;
+      document.body.style.overflow = originalBodyOverflow;
+      newDiv.style.display = "none";
    
 });
